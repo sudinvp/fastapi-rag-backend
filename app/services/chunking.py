@@ -25,6 +25,6 @@ def chunk_text(text: str, chunk_size: int | None = None, overlap: int | None = N
         chunks.append(chunk)
         if end >= len(words):
             break
-        start = end - overlap  # step forward, keeping `overlap` words of context
+        start = end - overlap  # step forward, keeping `overlap` words of context only
 
     return chunks
